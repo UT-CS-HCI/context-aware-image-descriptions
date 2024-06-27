@@ -1,0 +1,24 @@
+{
+    "name": "Context Aware Image Descriptions",
+    "description": "",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*",
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": ["storage", "activeTab", "scripting", "tabs"
+  ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+}
+  
