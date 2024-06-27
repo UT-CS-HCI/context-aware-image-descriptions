@@ -170,8 +170,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
 });
 
-
-
 // show/hide long baseline 1 description
 document.getElementById("baseDetailed").addEventListener("click", showHideLongBaseDescription);
 
